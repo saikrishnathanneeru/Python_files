@@ -1,0 +1,26 @@
+def calculate_average(marks):
+    total_marks = sum(marks)
+    number_of_students = len(marks)
+
+    if number_of_students == 0:
+        return 0  # Avoid division by zero if there are no students
+
+    average = total_marks / number_of_students
+    return average
+
+def main():
+    # Input: Enter the number of students in the class
+    num_students = int(input("Enter the number of students: "))
+
+    # Input: Enter the marks for each student
+    marks = []
+    for i in range(num_students):
+        mark = float(input(f"Enter marks for student {i + 1}: "))
+        marks.append(mark)
+
+    # Calculate and display the average marks
+    average_marks = calculate_average(marks)
+    print(f"\nAverage marks in the class: {average_marks:.2f}")
+
+if __name__ == "__main__":
+    main()
