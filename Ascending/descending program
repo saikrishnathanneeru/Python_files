@@ -1,0 +1,22 @@
+# Ascending Order
+def ascending_order(numbers):
+    sorted_numbers = sorted(numbers)
+    return sorted_numbers
+
+# Descending Order
+def descending_order(numbers):
+    sorted_numbers = sorted(numbers, reverse=True)
+    return sorted_numbers
+
+# Example usage
+if __name__ == "__main__":
+    # Input list of numbers
+    numbers = [5, 2, 8, 1, 3]
+
+    # Sorting in ascending order
+    ascending_result = ascending_order(numbers)
+    print("Ascending Order:", ascending_result)
+
+    # Sorting in descending order
+    descending_result = descending_order(numbers)
+    print("Descending Order:", descending_result)
